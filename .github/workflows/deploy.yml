@@ -22,14 +22,14 @@ jobs:
 
         - name: Setup Node
           uses: actions/setup-node@v4
-          with:
+            with:
             node-version: '20'
             cache: 'yarn'
 
-        - name: Setup Yarn
+        - name: Install Yarn 4 globally
           run: |
-            corepack enable
-            corepack prepare yarn@4.10.3 --activate
+            npm uninstall -g yarn
+            npm install -g yarn@4.10.3
             yarn --version
 
         - name: Install dependencies
