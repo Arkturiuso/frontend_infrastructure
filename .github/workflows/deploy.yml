@@ -30,8 +30,7 @@ jobs:
 
         - name: Install dependencies
           run: yarn install --frozen-lockfile
-          env:
-            YARN_IGNORE_NODE: 1
+
 
         - name: Build
           run: yarn build
