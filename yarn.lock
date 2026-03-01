@@ -1634,9 +1634,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fronted_infrastructure@workspace:.":
+"frontend_infrastructure@workspace:.":
   version: 0.0.0-use.local
-  resolution: "fronted_infrastructure@workspace:."
+  resolution: "frontend_infrastructure@workspace:."
   dependencies:
     "@eslint/js": "npm:^10.0.1"
     "@types/gh-pages": "npm:^6"

@@ -1,5 +1,5 @@
 {
-    "name": "fronted_infrastructure",
+    "name": "frontend_infrastructure",
     "type": "module",
     "homepage": "https://github.com/Arkturiuso/frontend_infrastructure",
     "devDependencies": {
