@@ -11,6 +11,11 @@ module.exports = {
         semi: true,
         tabWidth: 2,
       },
+
+      files: ['*.tsx', '*.jsx'],
+      options: {
+        parser: 'typescript'
+      }
     },
   ],
 };
