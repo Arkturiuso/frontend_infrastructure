@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true,
+    "lib": ["ES2020", "DOM"],
+    "target": "ES2020"
+  },
+  "include": ["src", "eslint.config.mjs"]
+}
