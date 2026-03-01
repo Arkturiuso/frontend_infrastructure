@@ -1,5 +1,6 @@
 {
     "name": "fronted_infrastructure",
+    "packageManager": "yarn@4.10.3",
     "type": "module",
     "homepage": "https://github.com/Arkturiuso/frontend_infrastructure",
     "devDependencies": {
