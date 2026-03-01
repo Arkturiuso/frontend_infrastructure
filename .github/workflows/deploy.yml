@@ -1,17 +1,17 @@
-name: Build & Deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
-    push:
-        branches: ['master']
+  push:
+    branches: ['master']
 
 permissions:
-    contents: read
-    pages: write
-    id-token: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-    group: 'pages'
-    cancel-in-progress: true
+  group: 'pages'
+  cancel-in-progress: true
 
 jobs:
     build:
@@ -23,20 +23,21 @@ jobs:
         - name: Setup Node
           uses: actions/setup-node@v4
           with:
-            node-version: '20'
-            cache: 'yarn'
+              node-version: '20'
 
-        - name: Install Yarn 4 globally
-          run: |
-            npm uninstall -g yarn
-            npm install -g yarn@4.10.3
-            yarn --version
+        - name: Install Yarn
+          run: npm install -g yarn
 
         - name: Install dependencies
           run: yarn install --frozen-lockfile
 
         - name: Build
           run: yarn build
+
+        - name: Upload Pages artifact
+          uses: actions/upload-pages-artifact@v4
+          with:
+            path: 'dist'
 
     deploy:
         runs-on: ubuntu-latest
