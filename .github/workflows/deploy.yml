@@ -25,11 +25,14 @@ jobs:
           with:
               node-version: '20'
 
-        - name: Install Yarn
-          run: npm install -g yarn
+        - name: Setup Yarn 4
+          run: |
+            corepack enable
+            yarn set version 4.10.3
+            yarn --version
 
         - name: Install dependencies
-          run: yarn install --frozen-lockfile
+          run: yarn install
 
 
         - name: Build
