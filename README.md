@@ -1,3 +1,3 @@
-# fronted_infrastructure
+# frontend_infrastructure
 
 Репозиторий с конфигурациями и настройками части фронтенда
