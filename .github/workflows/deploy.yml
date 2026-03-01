@@ -17,27 +17,22 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout
-              uses: actions/checkout@v4
+        - name: Checkout
+          uses: actions/checkout@v4
 
-            - name: Setup Node
-              uses: actions/setup-node@v4
-              with:
-                  node-version: '20'
-                  cache: 'yarn'
+        - name: Setup Node
+          uses: actions/setup-node@v4
+          with:
+            node-version: '20'
+            cache: 'yarn'
 
-            - name: Enable Corepack & Install
-              run: |
-                corepack enable
-                yarn install --frozen-lockfile
+        - name: Enable Corepack & Install
+          run: |
+            corepack enable
+            yarn install --frozen-lockfile
 
-            - name: Build
-              run: yarn build
-
-            - name: Upload Pages artifact
-              uses: actions/upload-pages-artifact@v4
-              with:
-                  path: 'build'
+        - name: Build
+          run: yarn build
 
     deploy:
         runs-on: ubuntu-latest
