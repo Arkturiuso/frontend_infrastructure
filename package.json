@@ -1,0 +1,35 @@
+{
+    "name": "frontend_infrastructure",
+    "type": "module",
+    "homepage": "https://github.com/Arkturiuso/frontend_infrastructure",
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@types/gh-pages": "^6",
+        "@types/lodash": "^4.17.24",
+        "@types/react": "^19.2.14",
+        "@types/react-dom": "^19.2.3",
+        "@vitejs/plugin-react": "^5.1.4",
+        "eslint": "^10.0.2",
+        "gh-pages": "^6.3.0",
+        "globals": "^17.4.0",
+        "husky": "^9.1.7",
+        "prettier": "^3.8.1",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.56.1",
+        "vite": "^7.3.1"
+    },
+    "scripts": {
+        "postinstall": "git config core.hooksPath .husky",
+        "lint": "eslint src",
+        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,json}\"",
+        "build": "vite build",
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d dist",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "lodash": "^4.17.23",
+        "react": "^19.2.4",
+        "react-dom": "^19.2.4"
+    }
+}
