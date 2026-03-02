@@ -23,7 +23,8 @@
         "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,json}\"",
         "build": "vite build",
         "predeploy": "yarn build",
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d dist",
+        "prepare": "husky"
     },
     "dependencies": {
         "lodash": "^4.17.23",
