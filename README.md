@@ -35,3 +35,4 @@
  - https://stackoverflow.com/questions/11334045/how-to-set-the-default-branch-in-github-com#:~:text=December%202024%20update
  - https://habr.com/ru/articles/878638/
 
+### Решение проблемы с работой husky: https://github.com/typicode/husky/issues/1561
