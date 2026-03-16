@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
 import { shuffle } from 'lodash';
+
+import React, { useState } from 'react';
 
 const App = () => {
     const quotes = [

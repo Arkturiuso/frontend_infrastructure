@@ -1,2 +1,2 @@
-﻿const old = 'var';
+const old = 'var';
 console.warn(old);

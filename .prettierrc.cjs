@@ -4,6 +4,22 @@ module.exports = {
   arrowParens: 'always',
   printWidth: 80,
   tabWidth: 4,
+  plugins: ["@trivago/prettier-plugin-sort-imports"],
+  importOrder: [
+    "^[react]",
+    "^./hooks",
+    "^~/icons",
+    "^@(?!/)",
+    "^@/entities",
+    "^@/features",
+    "^@/widget",
+    "^@/shared",
+    "^./ui",
+    "^[./]"
+  ],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
+
   overrides: [
     {
       files: ['*.json'],
@@ -11,11 +27,12 @@ module.exports = {
         semi: true,
         tabWidth: 2,
       },
-
+    },
+    {
       files: ['*.tsx', '*.jsx'],
       options: {
         parser: 'typescript'
       }
-    },
+    }
   ],
 };
