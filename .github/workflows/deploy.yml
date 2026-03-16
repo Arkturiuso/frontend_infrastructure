@@ -25,15 +25,17 @@ jobs:
           with:
               node-version: '20'
 
-        - name: Setup Yarn 4
-          run: |
-            corepack enable
-            yarn set version 4.10.3
-            yarn --version
+        - name: Enable Corepack
+          run: corepack enable
 
         - name: Install dependencies
           run: yarn install --frozen-lockfile
 
+        - name: Type check
+          run: yarn typecheck
+
+        - name: Lint all
+          run: yarn lint:all
 
         - name: Build
           run: yarn build

@@ -5,7 +5,11 @@
         "lib": ["ES2020", "DOM"],
         "target": "ES2020",
         "jsx": "react",
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "moduleResolution": "bundler"
     },
-    "include": ["src", "eslint.config.mjs"]
+    "include": ["src", "eslint.config.mjs"],
+    "exculude": ["node_modules"]
+
 }
