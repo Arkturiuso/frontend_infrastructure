@@ -1,3 +1,3 @@
 ﻿// Базовые
-const old: number = 'var';
+const old = 'var';
 console.warn(old);

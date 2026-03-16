@@ -28,7 +28,7 @@ export default [
   },
   {
     rules: {
-            // Базовые
+      // Базовые
       'curly': 'error',
       'eqeqeq': 'error',
       'no-var': 'error',
