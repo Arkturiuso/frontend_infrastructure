@@ -78,6 +78,9 @@ export default [
       'dist/**',
       'tools/**',
       'package-lock.json',
+      '.yarn/**', 
+      '.prettierrc.cjs',
+      'eslint.config.mjs',
     ],
   },
 ];

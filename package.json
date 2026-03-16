@@ -30,7 +30,7 @@
     "build": "vite build",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist",
-    "prepare": "npx husky init",
+    "prepare": "husky install .husky",
     "dev": "vite",
     "typecheck": "tsc --noEmit"
   },
