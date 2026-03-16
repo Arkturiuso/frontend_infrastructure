@@ -29,7 +29,7 @@
         "build": "vite build",
         "predeploy": "yarn build",
         "deploy": "gh-pages -d dist",
-        "prepare": "husky && chmod +x .husky/pre-commit",
+        "prepare": "husky install",
         "dev": "vite",
         "typecheck": "tsc --noEmit"
     },

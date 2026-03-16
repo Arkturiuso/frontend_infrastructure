@@ -11,5 +11,4 @@
     },
     "include": ["src", "eslint.config.mjs"],
     "exculude": ["node_modules"]
-
 }
