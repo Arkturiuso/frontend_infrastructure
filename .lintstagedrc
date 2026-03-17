@@ -1,0 +1,13 @@
+{
+    "*.{js,jsx}": [
+        "exit 1"
+    ],
+    "*.{ts,tsx}": [
+        "eslint --fix",
+        "prettier --write",
+        "yarn typecheck"
+    ],
+    "*.{css,json,html}": [
+        "prettier --write"
+    ]
+}
