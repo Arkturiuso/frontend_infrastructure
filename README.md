@@ -27,12 +27,19 @@
 
 ## При выполнении данной работы были дополнительно использованы следующие ресурсы:
 
- - https://habr.com/ru/companies/ruvds/articles/428173/
- - https://eslint.org/docs/latest/rules
- - https://ru.hexlet.io/blog/posts/kak-ispolzovat-annotatsii-tipov-v-faylah-javascript
- - https://www.dev-notes.ru/articles/git/husky-how-to-automatically-format-lint-and-test-before-you-commit-or-push/
- - https://habr.com/ru/articles/754128/
- - https://stackoverflow.com/questions/11334045/how-to-set-the-default-branch-in-github-com#:~:text=December%202024%20update
- - https://habr.com/ru/articles/878638/
+ - Prettier, ESLint, Husky, Lint-Staged и EditorConfig
+   - https://habr.com/ru/companies/ruvds/articles/428173/
+ - Официальная документация ESlint
+   - https://eslint.org/docs/latest/rules
+ - Аннотации типов TypeScript
+   - https://ru.hexlet.io/blog/posts/kak-ispolzovat-annotatsii-tipov-v-faylah-javascript
+ - Статья по установке и использованию Husky
+   - https://www.dev-notes.ru/articles/git/husky-how-to-automatically-format-lint-and-test-before-you-commit-or-push/
+ - Подпись коммитов в git при помощи gpg
+   - https://habr.com/ru/articles/754128/
+ - Установка ветки по умолчанию
+   - https://stackoverflow.com/questions/11334045/how-to-set-the-default-branch-in-github-com#:~:text=December%202024%20update
+ - Сортировка импортов
+   - https://habr.com/ru/articles/878638/
 
 ### Решение проблемы с работой husky: https://github.com/typicode/husky/issues/1561
