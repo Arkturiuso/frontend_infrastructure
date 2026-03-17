@@ -28,11 +28,5 @@ module.exports = {
         tabWidth: 2,
       },
     },
-    {
-      files: ['*.tsx', '*.jsx'],
-      options: {
-        parser: 'typescript'
-      }
-    }
   ],
 };

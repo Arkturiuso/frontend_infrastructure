@@ -44,6 +44,7 @@ export default [
       ],
 
       // Чистота кода
+      'no-unreachable': 'error',
       'no-else-return': 'error',
       'prefer-template': 'error',
       'prefer-arrow-callback': 'error',
@@ -78,7 +79,7 @@ export default [
       'dist/**',
       'tools/**',
       'package-lock.json',
-      '.yarn/**', 
+      '.yarn/**',
       '.prettierrc.cjs',
       'eslint.config.mjs',
     ],

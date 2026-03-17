@@ -2,7 +2,7 @@
   "name": "frontend_infrastructure",
   "type": "module",
   "homepage": "https://github.com/Arkturiuso/frontend_infrastructure",
-  "author": "Kirill Tagai tagaykirill83@gmail.com",
+  "author": "Kirill Tagai <tagaykirill83@gmail.com>",
   "devDependencies": {
     "@eslint/js": "9.39.4",
     "@trivago/prettier-plugin-sort-imports": "6.0.2",
@@ -13,6 +13,7 @@
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.1",
     "eslint": "9.39.4",
+    "eslint-plugin-react": "7.37.5",
     "gh-pages": "6.3.0",
     "globals": "17.4.0",
     "husky": "9.1.7",
@@ -35,7 +36,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "eslint-plugin-react": "7.37.5",
     "lodash": "4.17.23",
     "react": "19.2.4",
     "react-dom": "19.2.4"

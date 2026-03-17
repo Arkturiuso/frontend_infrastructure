@@ -1,7 +1,11 @@
 {
-    "*.{js,jsx,ts,tsx}": [
+    "*.{js,jsx}": [
+        "exit 1"
+    ],
+    "*.{ts,tsx}": [
         "eslint --fix",
-        "prettier --write"
+        "prettier --write",
+        "yarn typecheck"
     ],
     "*.{css,json,html}": [
         "prettier --write"
